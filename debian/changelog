@@ -1,5 +1,51 @@
-template-repository (1.0-1) unstable; urgency=medium
+node-subarg (1.0.0-4) unstable; urgency=medium
 
-  * Initial release
+  [ Debian Janitor ]
+  * Remove constraints unnecessary since buster:
+    + Build-Depends: Drop versioned constraint on node-tape.
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+ -- Jelmer Vernooĳ <jelmer@debian.org>  Tue, 22 Nov 2022 21:23:08 +0000
+
+node-subarg (1.0.0-3) unstable; urgency=medium
+
+  * Team upload
+
+  [ Debian Janitor ]
+  * Trim trailing whitespace.
+  * Use secure copyright file specification URI.
+  * Bump debhelper from old 10 to 12.
+  * Set debhelper-compat version in Build-Depends.
+  * Set upstream metadata fields: Bug-Database, Bug-Submit, Repository,
+    Repository-Browse.
+  * Update Vcs-* headers from URL redirect.
+  * Use canonical URL in Vcs-Git.
+  * Remove constraints unnecessary since stretch:
+    + Build-Depends: Drop versioned constraint on node-minimist and nodejs.
+    + node-subarg: Drop versioned constraint on node-minimist and nodejs in
+      Depends.
+  * Bump debhelper from old 12 to 13.
+
+  [ Yadd ]
+  * Declare compliance with policy 4.6.0
+  * Add "Rules-Requires-Root: no"
+  * Change section to javascript
+  * Add debian/gbp.conf
+  * Fix filenamemangle
+  * Fix GitHub tags regex
+  * Drop dependency to nodejs
+  * Use dh-sequence-nodejs auto test & install
+
+ -- Yadd <yadd@debian.org>  Mon, 03 Jan 2022 15:49:04 +0100
+
+node-subarg (1.0.0-2) unstable; urgency=medium
+
+  * Move to salsa
+  * Bump policy and compat
+
+ -- Bastien Roucariès <rouca@debian.org>  Thu, 07 Jun 2018 17:39:21 +0200
+
+node-subarg (1.0.0-1) unstable; urgency=low
+
+  * Initial release (Closes: #853722)
+
+ -- Bastien Roucariès <rouca@debian.org>  Thu, 17 Aug 2017 22:50:20 +0200
